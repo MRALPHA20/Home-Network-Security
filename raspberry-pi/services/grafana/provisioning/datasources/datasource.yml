@@ -1,0 +1,21 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    isDefault: true
+    editable: false
+    url: http://prometheus.raspberrypi.local
+    jsonData:
+      graphiteVersion: "1.1"
+      tlsAuth: false
+      tlsAuthWithCACert: false
+    version: 1
+
+  - name: Loki
+    type: loki
+    access: proxy
+    editable: false
+    url: http://loki.raspberrypi.local
+    version: 1
