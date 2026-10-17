@@ -1,0 +1,12 @@
+# Local secrets - never commit these
+.env
+
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Local artifact previews (if any)
+portfolio-guide.html
